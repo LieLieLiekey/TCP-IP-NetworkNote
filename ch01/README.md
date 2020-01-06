@@ -2,6 +2,20 @@
 
 本章代码，在[TCP-IP-NetworkNote](https://github.com/riba2534/TCP-IP-NetworkNote)中可以找到，直接点连接可能进不去。
 
+#### 头文件`unistd.h`
+
+`unistd.h` 是 [C](https://zh.wikipedia.org/wiki/C语言) 和 [C++](https://zh.wikipedia.org/wiki/C%2B%2B) 程序设计语言中提供对 [POSIX](https://zh.wikipedia.org/wiki/POSIX) 操作系统 [API](https://zh.wikipedia.org/wiki/API) 的访问功能的[标头档](https://zh.wikipedia.org/wiki/標頭檔)的名称。是**Uni**x **St**an**d**ard的缩写。该头文件由 POSIX.1 标准（[单一UNIX规范](https://zh.wikipedia.org/wiki/单一UNIX规范)的基础）提出，故所有遵循该标准的操作系统和[编译器](https://zh.wikipedia.org/wiki/编译器)均应提供该头文件（如 Unix 的所有官方版本，包括 [Mac OS X](https://zh.wikipedia.org/wiki/Mac_OS_X)、[Linux](https://zh.wikipedia.org/wiki/Linux) 等）。
+
+对于类 Unix 系统，`unistd.h` 中所定义的接口通常都是大量针对系统调用的封装（英语：wrapper functions），如 `fork`、`pipe` 以及各种 I/O 原语（`read`、`write`、`close` 等等）。
+
+类似于 [Cygwin](https://zh.wikipedia.org/wiki/Cygwin) 和 [MinGW](https://zh.wikipedia.org/wiki/MinGW) 的 Unix [兼容层](https://zh.wikipedia.org/wiki/兼容层)也提供相应版本的 `unistd.h`。
+
+#### 头文件`fcntl.h`
+
+> 参考:https://pubs.opengroup.org/onlinepubs/7908799/xsh/fcntl.h.html
+
+定义了函数`fcntl()`和`open()`和一些参数。
+
 ### 1.1 理解网络编程和套接字
 
 #### 1.1.1构建打电话套接字
